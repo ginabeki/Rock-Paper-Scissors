@@ -1,0 +1,43 @@
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #151d3b;
+  font-family: "Open Sans", sans-serif;
+}
+h1 {
+  text-align: center;
+  color: #d82148;
+  font-family: "Press Start 2P", cursive;
+  text-transform: uppercase;
+}
+.selections {
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+}
+.selection {
+  margin-top: 5rem;
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 3rem;
+  transition: 100ms;
+}
+.selection:hover {
+  transform: scale(1.2);
+}
+.results {
+  margin-top: 5rem;
+  display: grid;
+  justify-content: center;
+  color: #dadbbd;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+  align-items: center;
+  font-size: 1.5rem;
+}
+.score {
+  margin-left: 0.1rem;
+  font-size: 0.8rem;
+}

@@ -3,12 +3,14 @@ body {
   margin: 0;
   background-color: #151d3b;
   font-family: "Open Sans", sans-serif;
+  height: 100vh;
 }
 h1 {
   text-align: center;
   color: #d82148;
   font-family: "Press Start 2P", cursive;
   text-transform: uppercase;
+  margin-top: 2rem;
 }
 .selections {
   display: flex;
@@ -18,11 +20,16 @@ h1 {
 .selection {
   margin-top: 5rem;
   background: none;
-  border: none;
+  border: 1px solid #fff;
   outline: none;
   cursor: pointer;
-  font-size: 3rem;
+  font-size: 5rem;
   transition: 100ms;
+  padding: 10px;
+  max-height: 100%;
+  height: 200px;
+  max-width: 100%;
+  width: 200px;
 }
 .selection:hover {
   transform: scale(1.2);
@@ -40,4 +47,27 @@ h1 {
 .score {
   margin-left: 0.1rem;
   font-size: 0.8rem;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+  padding: 10px;
+  color: #fff;
+  font-size: 20px;
+}
+.fa-github {
+  color: #fff;
+  font-size: 23px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.fa-github:hover {
+  transform: rotate(-180deg) scale(1.2);
 }

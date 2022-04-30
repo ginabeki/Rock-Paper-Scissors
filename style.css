@@ -71,3 +71,9 @@ h1 {
 .fa-github:hover {
   transform: rotate(-180deg) scale(1.2);
 }
+
+@media only screen and (max-width: 925px) {
+  h1 {
+    font-size: 2rem;
+  }
+}

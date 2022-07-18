@@ -4,23 +4,37 @@ body {
   background-color: #151d3b;
   font-family: "Open Sans", sans-serif;
   height: 100vh;
+  line-height: 1.5;
 }
 h1 {
   text-align: center;
   color: #d82148;
   font-family: "Press Start 2P", cursive;
   text-transform: uppercase;
-  margin-top: 2rem;
+  padding: 30px;
+  margin-top: 0;
+  background-color: #070d24;
+}
+h2 {
+  text-align: center;
+  color: #fff;
+  font-size: 1.4rem;
+}
+h3 {
+  text-align: center;
+  color: #fff;
+  font-size: 1.2rem;
 }
 .selections {
   display: flex;
   justify-content: center;
-  gap: 5rem;
+  gap: 4rem;
 }
 .selection {
-  margin-top: 5rem;
-  background: none;
+  margin-top: 4rem;
+  background: #070d24;
   border: 1px solid #fff;
+  border-radius: 8px;
   outline: none;
   cursor: pointer;
   font-size: 4rem;
@@ -32,10 +46,10 @@ h1 {
   width: 150px;
 }
 .selection:hover {
-  transform: scale(1.2);
+  transform: scale(1.1);
 }
 .results {
-  margin-top: 5rem;
+  margin-top: 3rem;
   display: grid;
   justify-content: center;
   color: #dadbbd;
@@ -50,17 +64,13 @@ h1 {
 }
 
 .footer {
-  position: absolute;
-  bottom: 0;
-  left: 0;
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 10px;
-  width: 100%;
-  padding: 10px;
+  margin-top: 50px;
   color: #fff;
-  font-size: 20px;
+  font-size: 18px;
 }
 .fa-github {
   color: #fff;
@@ -70,6 +80,51 @@ h1 {
 
 .fa-github:hover {
   transform: rotate(-180deg) scale(1.2);
+}
+.modal {
+  position: fixed;
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  width: 300px;
+  padding: 30px;
+  border-radius: 10px;
+  background-color: #151d3b;
+  text-align: center;
+  font-size: 30px;
+  user-select: none;
+  transform: translate(-50%, -50%) scale(0);
+  transition: 200ms ease-in-out;
+}
+
+.modal.active {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.modal-title {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.btn-restart {
+  padding: 10px 20px;
+  margin-top: 25px;
+  margin-bottom: 15px;
+}
+
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #151d3b;
+  opacity: 0.6;
+}
+
+.overlay.active {
+  display: block;
 }
 
 @media only screen and (max-width: 925px) {

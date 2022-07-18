@@ -20,33 +20,44 @@
       <header>
         <h1>Rock Paper Scissors</h1>
       </header>
+      <div>
+        <h2 class="score-info" id="scoreInfo">Choose your weapon</h2>
+        <h3 class="score-message" id="scoreMessage">
+          First to score 5 points wins the game
+        </h3>
+      </div>
 
       <!-- =====================Start selection======================= -->
       <div class="selections">
-        <button class="selection">🪨</button>
-        <button class="selection">📰</button>
-        <button class="selection">✂️</button>
+        <button class="selection" id="rockBtn">🪨</button>
+        <button class="selection" id="paperBtn">📰</button>
+        <button class="selection" id="scissorBtn">✂️</button>
       </div>
       <!-- =====================End selection======================= -->
       <!-- =====================Start Results======================= -->
       <div class="results">
         <div>
           You
-          <span class="score">0</span>
+          <span class="score" id="playerScore">0</span>
         </div>
         <div>
           Computer
-          <span class="score">0</span>
+          <span class="score" id="computerScore">0</span>
         </div>
       </div>
     </main>
     <!-- =====================End Results======================= -->
     <footer class="footer">
-      <p>Copyright © Gina Beki</p>
+      <p>Copyright © 2022 Gina Beki</p>
       <a href="https://github.com/ginabeki" target="_blank">
         <i class="fab fa-github"></i
       ></a>
     </footer>
+    <div class="modal" id="endgameModal">
+      <p class="modal-title" id="endgameMsg"></p>
+      <button class="btn btn-restart" id="restartBtn">Play again</button>
+    </div>
+    <div class="overlay" id="overlay"></div>
     <script src="script.js"></script>
   </body>
 </html>
